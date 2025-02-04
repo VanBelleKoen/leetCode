@@ -18,8 +18,7 @@ func searchInsert(nums []int, target int) int {
 }
 
 func main() {
-    // Example usage
     nums := []int{1, 3, 5, 6}
     target := 5
-    fmt.Println(searchInsert(nums, target)) // Output: 2
+    fmt.Println(searchInsert(nums, target))
 }
