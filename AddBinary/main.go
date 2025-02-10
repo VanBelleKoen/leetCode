@@ -1,5 +1,7 @@
 package main
 
+import "strconv"
+
 func addBinary(a string, b string) string {
 	var result string
 	var carry int
@@ -11,7 +13,7 @@ func addBinary(a string, b string) string {
 		if j >= 0 {
 			sum += int(b[j] - '0')
 		}
-		result = string(sum % 2 + '0') + result
+		result = strconv.Itoa(sum % 2) + result
 		carry = sum / 2
 	}
 	if carry > 0 {
